@@ -71,11 +71,11 @@ const HeroSlider = () => {
               backgroundPosition: 'center'
             }}
           >
-            <div className="text-center text-white z-10 max-w-40 xs:max-w-48 sm:max-w-md md:max-w-lg lg:max-w-2xl px-1 xs:px-2 sm:px-4 lg:px-8">
+            <div className="text-center text-white z-10 max-w-32 xs:max-w-36 sm:max-w-md md:max-w-lg lg:max-w-2xl px-1 xs:px-2 sm:px-4 lg:px-8">
               <p className="text-xs xs:text-xs sm:text-sm font-medium mb-1 sm:mb-2 opacity-90">{slide.title}</p>
-              <h1 className="text-sm xs:text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold mb-1 xs:mb-2 sm:mb-3 lg:mb-4 leading-tight">{slide.subtitle}</h1>
-              <p className="text-xs xs:text-xs sm:text-sm lg:text-base mb-1 xs:mb-2 sm:mb-4 lg:mb-6 opacity-90 max-w-32 xs:max-w-40 sm:max-w-md lg:max-w-lg mx-auto">{slide.description}</p>
-              <button className="bg-white text-gray-900 px-2 xs:px-3 sm:px-4 lg:px-6 xl:px-8 py-1 xs:py-1.5 sm:py-2 lg:py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-300 text-xs xs:text-xs sm:text-sm lg:text-base">
+              <h1 className="text-xs xs:text-xs sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold mb-1 xs:mb-1 sm:mb-3 lg:mb-4 leading-tight">{slide.subtitle}</h1>
+              <p className="text-xs xs:text-xs sm:text-sm lg:text-base mb-1 xs:mb-1 sm:mb-4 lg:mb-6 opacity-90 max-w-28 xs:max-w-32 sm:max-w-md lg:max-w-lg mx-auto">{slide.description}</p>
+              <button className="bg-white text-gray-900 px-1.5 xs:px-2 sm:px-4 lg:px-6 xl:px-8 py-0.5 xs:py-1 sm:py-2 lg:py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-300 text-xs xs:text-xs sm:text-sm lg:text-base">
                 {slide.buttonText}
               </button>
             </div>
