@@ -62,7 +62,7 @@ const AwardSlider = ({ awards }) => {
       <span
         key={index}
         onClick={() => goToSlide(index)}
-        className={`cursor-pointer w-3 h-3 rounded-full inline-block transition-colors duration-300 ${
+        className={`cursor-pointer w-2 h-2 rounded-full inline-block transition-colors duration-300 ${
           index === currentSlide ? 'bg-purple-600' : 'bg-gray-300'
         }`}
       ></span>

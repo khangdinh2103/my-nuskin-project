@@ -1,7 +1,13 @@
 import { getDiscountPercentage } from '../../models/Product';
+import { useCart } from '../../contexts/CartContext';
 
 const ProductCard = ({ product }) => {
+  const { addToCart } = useCart();
   const discountPercent = getDiscountPercentage(product);
+  
+  const handleAddToCart = () => {
+    addToCart(product);
+  };
   
   return (
     <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
@@ -45,7 +51,10 @@ const ProductCard = ({ product }) => {
         </div>
 
         {/* Add to Cart Button */}
-        <button className="w-full !bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded font-medium transition-colors duration-300 text-sm">
+        <button 
+          onClick={handleAddToCart}
+          className="w-full !bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded font-medium transition-colors duration-300 text-sm"
+        >
           Add to cart
         </button>
       </div>

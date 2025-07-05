@@ -55,7 +55,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative h-96 overflow-hidden">
+    <div className="relative h-64 sm:h-80 md:h-96 overflow-hidden rounded-lg">
       {/* Slides */}
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full"
@@ -71,11 +71,11 @@ const HeroSlider = () => {
               backgroundPosition: 'center'
             }}
           >
-            <div className="text-center text-white z-10 max-w-2xl px-4">
-              <p className="text-sm font-medium mb-2 opacity-90">{slide.title}</p>
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">{slide.subtitle}</h1>
-              <p className="text-lg mb-6 opacity-90">{slide.description}</p>
-              <button className="bg-white text-gray-900 px-8 py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-300">
+            <div className="text-center text-white z-10 max-w-2xl px-4 sm:px-6 lg:px-8">
+              <p className="text-xs sm:text-sm font-medium mb-2 opacity-90">{slide.title}</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight">{slide.subtitle}</h1>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 opacity-90 max-w-lg mx-auto">{slide.description}</p>
+              <button className="bg-white text-gray-900 px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base">
                 {slide.buttonText}
               </button>
             </div>
@@ -86,18 +86,18 @@ const HeroSlider = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 !bg-black !bg-opacity-10 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
+        className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 !bg-black !bg-opacity-10 hover:bg-opacity-30 text-white p-1.5 sm:p-2 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 !bg-black !bg-opacity-10 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
+        className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 !bg-black !bg-opacity-10 hover:bg-opacity-30 text-white p-1.5 sm:p-2 rounded-full transition-all duration-300 opacity-70 hover:opacity-100"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
@@ -108,10 +108,8 @@ const HeroSlider = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-white' 
-                : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+              currentSlide === index ? 'bg-white' : 'bg-white bg-opacity-50'
             }`}
           />
         ))}

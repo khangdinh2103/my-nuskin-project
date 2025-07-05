@@ -35,7 +35,7 @@ const AwardsSection = () => {
     },
     {
       title: "Epoch® Yin & Yang Mask",
-      image: "https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=100&h=100&fit=crop&crop=center",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=100&h=100&fit=crop&crop=center",
       details: [
         "2022 Most",
         "Sustainable",
@@ -47,7 +47,7 @@ const AwardsSection = () => {
     },
     {
       title: "ageLOC® Facial Spa",
-      image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=100&h=100&fit=crop&crop=center",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=100&h=100&fit=crop&crop=center",
       details: [
         "2021 Readers'",
         "Choice Beauty",
@@ -126,10 +126,11 @@ const AwardsSection = () => {
             />
           </div>
           <div className="text-right">
-            <p className="text-sm text-gray-600 mb-1">WORLD'S #1 COMPANY FOR</p>
-            <h3 className="text-xl font-bold text-gray-900">Beauty & Wellness Device Systems</h3>
-            <p className="text-xs text-gray-500 mt-1">Source: Euromonitor</p>
-          </div>
+            <p className="text-xl text-gray-600 mb-1">WORLD'S #1 COMPANY FOR</p>
+            <h3 className="text-2xl font-bold text-gray-900">Beauty & Wellness Device Systems</h3>
+            <p className="text-base text-gray-500 mt-1">Source: Euromonitor</p>
+            </div>
+
         </div>
       </div>
 

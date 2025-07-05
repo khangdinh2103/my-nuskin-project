@@ -12,14 +12,14 @@ const ProductSidebar = () => {
       }}
     >
       {/* Content */}
-      <div className="relative z-10">
-        <h3 className="text-lg font-semibold text-gray-900 mb-6 leading-tight">
+      <div className="relative z-10 text-left">
+        <h2 className="text-lg text-gray-900 mb-6 leading-tight">
           Find out<br />
           what<br />
           everyone's<br />
           talking<br />
           about
-        </h3>
+        </h2>
         
         {/* Browse Link */}
         <div className="mb-6">
