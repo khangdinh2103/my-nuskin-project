@@ -55,7 +55,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative h-64 sm:h-80 md:h-96 overflow-hidden rounded-lg">
+    <div className="relative h-48 sm:h-64 md:h-80 lg:h-96 overflow-hidden rounded-lg">
       {/* Slides */}
       <div 
         className="flex transition-transform duration-500 ease-in-out h-full"
@@ -71,11 +71,11 @@ const HeroSlider = () => {
               backgroundPosition: 'center'
             }}
           >
-            <div className="text-center text-white z-10 max-w-2xl px-4 sm:px-6 lg:px-8">
-              <p className="text-xs sm:text-sm font-medium mb-2 opacity-90">{slide.title}</p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight">{slide.subtitle}</h1>
-              <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 opacity-90 max-w-lg mx-auto">{slide.description}</p>
-              <button className="bg-white text-gray-900 px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base">
+            <div className="text-center text-white z-10 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl px-2 sm:px-4 lg:px-8">
+              <p className="text-xs font-medium mb-1 sm:mb-2 opacity-90">{slide.title}</p>
+              <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-bold mb-2 sm:mb-3 lg:mb-4 leading-tight">{slide.subtitle}</h1>
+              <p className="text-xs sm:text-sm lg:text-base mb-2 sm:mb-4 lg:mb-6 opacity-90 max-w-xs sm:max-w-md lg:max-w-lg mx-auto">{slide.description}</p>
+              <button className="bg-white text-gray-900 px-3 sm:px-4 lg:px-6 xl:px-8 py-1.5 sm:py-2 lg:py-3 rounded font-semibold hover:bg-gray-100 transition-colors duration-300 text-xs sm:text-sm lg:text-base">
                 {slide.buttonText}
               </button>
             </div>
