@@ -76,7 +76,7 @@ const TopMenu = () => {
             </button>
             <button 
               onClick={() => navigate('/')}
-              className="bg-purple-600 hover:bg-purple-700 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded font-medium transition-colors duration-200 text-sm sm:text-base"
+              className="bg-purple-600 hover:bg-purple-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded font-medium transition-colors duration-200 text-sm sm:text-base"
             >
               Register
             </button>
