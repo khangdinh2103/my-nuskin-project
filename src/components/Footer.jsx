@@ -2,56 +2,61 @@ export default function Footer() {
   return (
     <footer className="bg-[#4B1C5F] text-white text-[15px] pt-10">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-8 ">
-        {/* Company Info */}
-        <div className="col-span-1">
-          <p className="mb-4">
-            Dolore erat dolor sit lorem vero amet. Sed sit lorem magna,
-            ipsum no sit erat lorem et magna ipsum dolore amet erat.
-          </p>
-          <ul className="space-y-2">
-            <li className="flex items-center gap-2">
-              <i className="fas fa-map-marker-alt"></i>
-              <span>123 Street, New York, USA</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <i className="fas fa-envelope"></i>
-              <span>info@example.com</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <i className="fas fa-phone"></i>
-              <span>+012 345 67890</span>
-            </li>
-          </ul>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 pb-8 ">
+        {/* Main grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="col-span-1">
+            <p className="mb-4">
+              Dolore erat dolor sit lorem vero amet. Sed sit lorem magna,
+              ipsum no sit erat lorem et magna ipsum dolore amet erat.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2">
+                <i className="fas fa-map-marker-alt"></i>
+                <span>123 Street, New York, USA</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <i className="fas fa-envelope"></i>
+                <span>info@example.com</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <i className="fas fa-phone"></i>
+                <span>+012 345 67890</span>
+              </li>
+            </ul>
+          </div>
 
-        {/* Quick Links 1 */}
-        <div>
-          <h5 className="font-semibold mb-4">Quick Links</h5>
-         
-          <ul className="space-y-2 text-left  w-max mx-auto ">
-            <li><a href="#" className="!text-white hover:underline">› Home</a></li>
-            <li><a href="#" className="!text-white hover:underline">› Our Shop</a></li>
-            <li><a href="#" className="!text-white hover:underline">› Shop Detail</a></li>
-            <li><a href="#" className="!text-white hover:underline">› Shopping Cart</a></li>
-            <li><a href="#" className="!text-white hover:underline">› Checkout</a></li>
-            <li><a href="#" className="!text-white hover:underline">› Contact Us</a></li>
-          </ul>
-          
-          
-        </div>
+          {/* Quick Links Container - 2 columns on mobile */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-3">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8">
+              {/* Quick Links 1 */}
+              <div>
+                <h5 className="font-semibold mb-4">Quick Links</h5>
+                <ul className="space-y-2 text-left">
+                  <li><a href="#" className="!text-white hover:underline">› Home</a></li>
+                  <li><a href="#" className="!text-white hover:underline">› Our Shop</a></li>
+                  <li><a href="#" className="!text-white hover:underline">› Shop Detail</a></li>
+                  <li><a href="#" className="!text-white hover:underline">› Shopping Cart</a></li>
+                  <li><a href="#" className="!text-white hover:underline">› Checkout</a></li>
+                  <li><a href="#" className="!text-white hover:underline">› Contact Us</a></li>
+                </ul>
+              </div>
 
-        {/* Quick Links 2 */}
-        <div>
-          <h5 className="font-semibold mb-4">Quick Links</h5>
-          <ul className="space-y-2 text-left  w-max mx-auto ">
-            <li><a href="#" className="!text-white ">› Home</a></li>
-            <li><a href="#" className="!text-white ">› Our Shop</a></li>
-            <li><a href="#" className="!text-white ">› Shop Detail</a></li>
-            <li><a href="#" className="!text-white ">› Shopping Cart</a></li>
-            <li><a href="#" className="!text-white ">› Checkout</a></li>
-            <li><a href="#" className="!text-white ">› Contact Us</a></li>
-          </ul>
+              {/* Quick Links 2 */}
+              <div>
+                <h5 className="font-semibold mb-4">Quick Links</h5>
+                <ul className="space-y-2 text-left">
+                  <li><a href="#" className="!text-white ">› Home</a></li>
+                  <li><a href="#" className="!text-white ">› Our Shop</a></li>
+                  <li><a href="#" className="!text-white ">› Shop Detail</a></li>
+                  <li><a href="#" className="!text-white ">› Shopping Cart</a></li>
+                  <li><a href="#" className="!text-white ">› Checkout</a></li>
+                  <li><a href="#" className="!text-white ">› Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

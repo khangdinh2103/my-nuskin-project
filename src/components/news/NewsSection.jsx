@@ -78,8 +78,8 @@ const NewsSection = () => {
         
 
         <div className="flex items-center gap-8">
-          {/* Left side - News Cards (3/4) */}
-          <div className="w-3/4 flex flex-col justify-center relative">
+          {/* Left side - News Cards (full width on mobile, 3/4 on larger screens) */}
+          <div className="w-full lg:w-3/4 flex flex-col justify-center relative">
             {/* View All Link - positioned at top right of this section */}
             <div className="flex justify-end mb-4">
               <a 
@@ -115,14 +115,14 @@ const NewsSection = () => {
       )}
 
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {currentNewsItems.map((item, index) => (
                 <div 
                   key={index} 
                   className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer group"
                 >
                   {/* Image */}
-                  <div className="h-48 overflow-hidden">
+                  <div className="h-32 xs:h-36 md:h-40 lg:h-48 overflow-hidden">
                     <img 
                       src={item.imageSrc}
                       alt={item.imageAlt}
@@ -131,8 +131,8 @@ const NewsSection = () => {
                   </div>
                   
                   {/* Content */}
-                  <div className="p-4 text-center">
-                    <h3 className="text-sm font-medium text-gray-900 leading-tight line-clamp-3 group-hover:text-purple-600 transition-colors duration-300">
+                  <div className="p-2 xs:p-3 lg:p-4 text-center">
+                    <h3 className="text-xs xs:text-xs md:text-sm lg:text-sm font-medium text-gray-900 leading-tight line-clamp-3 group-hover:text-purple-600 transition-colors duration-300">
                       {item.title}
                     </h3>
                   </div>
@@ -156,8 +156,8 @@ const NewsSection = () => {
             )}
           </div>
 
-          {/* Right side - News Panel (1/4) */}
-          <div className="w-1/4 flex-shrink-0">
+          {/* Right side - News Panel (hidden on mobile, visible on lg+) */}
+          <div className="hidden lg:block lg:w-1/4 flex-shrink-0">
             <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300&h=200&fit=crop&crop=center"
