@@ -33,10 +33,10 @@ const PromoBanners = () => {
           }}
         >
           {/* Content */}
-          <div className={`relative z-10 text-left p-2 sm:p-4 lg:p-6 ${promo.textColor} w-full sm:w-1/2`}>
-            <p className="text-xs font-medium mb-1 opacity-80">{promo.title}</p>
-            <h3 className="text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2">{promo.subtitle}</h3>
-            <button className="bg-white text-gray-900 px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 text-xs font-medium hover:bg-gray-100 transition-colors duration-300 rounded">
+          <div className={`relative z-10 text-left p-1 xs:p-2 sm:p-4 lg:p-6 ${promo.textColor} w-full xs:w-3/4 sm:w-1/2`}>
+            <p className="text-xs xs:text-xs sm:text-sm font-medium mb-1 opacity-80">{promo.title}</p>
+            <h3 className="text-xs xs:text-sm sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2">{promo.subtitle}</h3>
+            <button className="bg-white text-gray-900 px-1.5 xs:px-2 sm:px-3 lg:px-4 py-0.5 xs:py-1 sm:py-1.5 text-xs font-medium hover:bg-gray-100 transition-colors duration-300 rounded">
               {promo.buttonText}
             </button>
           </div>
